@@ -1,0 +1,23 @@
+<!-- base.html -->
+
+<!doctype html>
+<html>
+  <head>
+    <title>Radiology Management System</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <header>
+      <h1>Radiology Management System</h1>
+    
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    <footer>
+      <p>Copyright {% now "Y" %} Radiology Management System</p>
+    </footer>
+  </body>
+</html>
